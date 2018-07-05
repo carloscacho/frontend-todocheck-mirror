@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --progress --color --inline --hot --port 5599",
-    "prod": "NODE_ENV=production webpack --progress -p"
+    "prod": "webpack --progress -p"
   },
   "keywords": [],
   "author": "",

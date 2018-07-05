@@ -8,8 +8,8 @@ import TodoForm from './todoForm'
 import TodoList from './todoList'
 
 
-const URL = process.env.API_URL ? process.env.API_URL: 'http://localhost:3003/api/todoact'
-
+//const URL = http://localhost:3003/api/todoact'
+const URL = 'https://todocheckback.herokuapp.com/api/todoact'
 class Todo extends Component {
     constructor(props){
         super(props)
