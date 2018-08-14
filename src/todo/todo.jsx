@@ -91,6 +91,12 @@ class Todo extends Component {
                     check={this.checkTask}
                     unCheck={this.unCheckTask}
                     />
+                <footer>
+                     <p>
+                Esse app foi desenvolvido por <a href="https://github.com/carloscacho">@carloscacho</a> como forma de estudo na linguagem React com Redux
+                </p>
+                </footer>
+               
             </div>
         )
     }

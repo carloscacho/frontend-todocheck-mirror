@@ -1,4 +1,5 @@
 import React from 'react'
+import PageHeader from '../template/pageHeader'
 
 export default (props) => (
     <div>
@@ -9,8 +10,7 @@ export default (props) => (
             </p>
 
             <p>
-                Esse app foi desenvolvido por <a href="https://github.com/carloscacho">@carloscacho</a>
-                 como forma de estudo na linguagem React com Redux
+                Esse app foi desenvolvido por <a href="https://github.com/carloscacho">@carloscacho</a> como forma de estudo na linguagem React com Redux
             </p>
         </div>
 
