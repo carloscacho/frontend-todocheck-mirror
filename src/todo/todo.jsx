@@ -8,8 +8,8 @@ import TodoForm from './todoForm'
 import TodoList from './todoList'
 
 
-//const URL = http://localhost:3003/api/todoact'
-const URL = 'https://todocheckback.herokuapp.com/api/todoact'
+const URL = 'http://localhost:3003/api/todoact'
+//const URL = 'https://todocheckback.herokuapp.com/api/todoact'
 class Todo extends Component {
     constructor(props){
         super(props)
@@ -81,12 +81,12 @@ class Todo extends Component {
             <div>
                 <PageHeader name='Tarefas'  small='Cadastro'/>
                 <TodoForm  addTask={this.addTask} 
-                 description={this.state.description} 
                  change={this.changeInput}
                  searchTask={this.searchTask}
                  clearTask={this.checkTask}
                  />
-                <TodoList list={this.state.list}
+                <TodoList 
+                     // list={this.state.list}
                     delete={this.deleteTask}
                     check={this.checkTask}
                     unCheck={this.unCheckTask}

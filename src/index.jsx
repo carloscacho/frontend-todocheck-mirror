@@ -2,4 +2,17 @@ import React from 'react'
 import ReactDOM from 'react-dom';
 import App from './main/app'
 
-ReactDOM.render(<App />, document.getElementById('app'))
+//intregração react redux
+import { createStore } from 'redux'
+import { Provider } from 'react-redux'
+import reducers from './main/redux/reducers/reducers'
+
+
+const store = createStore(reducers)
+
+ReactDOM.render(
+    <Provider store={store}>
+        <App />
+    </Provider>,
+    
+    document.getElementById('app'))
