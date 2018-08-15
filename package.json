@@ -8,7 +8,7 @@
     "prod": "webpack --progress -p"
   },
   "keywords": [],
-  "author": "",
+  "author": "carloscaho",
   "license": "ISC",
   "devDependencies": {
     "@types/react-redux": "^6.0.4",
