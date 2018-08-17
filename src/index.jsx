@@ -3,12 +3,21 @@ import ReactDOM from 'react-dom';
 import App from './main/app'
 
 //intregração react redux
-import { createStore } from 'redux'
+import { applyMiddleware, createStore } from 'redux'
 import { Provider } from 'react-redux'
+//Milddleware
+import promise from 'redux-promise'
+import multi from  'redux-multi'
+import thunk from 'redux-thunk'
+
+
 import reducers from './main/redux/reducers/reducers'
 
 
-const store = createStore(reducers)
+const devTools = window.__REDUX_DEVTOOLS_EXTENSION__ 
+    && window.__REDUX_DEVTOOLS_EXTENSION__()
+
+const store = applyMiddleware(promise, multi, thunk)(createStore)(reducers, devTools)
 
 ReactDOM.render(
     <Provider store={store}>
